@@ -19,22 +19,55 @@
 ### c2: implement getter methods
 # Implement the width() and height() methods which return, respectively, the width and height of a rectangle. The tests that follow will create two objects—instances of Rectangle to test the calculations.
 
-class Rectangle:
-  def __init__(self, x1, y1, x2, y2):
-    if x1 < x2 and y1 > y2:
-      self.x1 = x1
-      self.y1 = y1
-      self.x2 = x2
-      self.y2 = y2
-    else:
-      print("Incorrect coordinates of the rectangle!")
+# class Rectangle:
+#   def __init__(self, x1, y1, x2, y2):
+#     if x1 < x2 and y1 > y2:
+#       self.x1 = x1
+#       self.y1 = y1
+#       self.x2 = x2
+#       self.y2 = y2
+#     else:
+#       print("Incorrect coordinates of the rectangle!")
 
-  def width(self):
-    return self.x2 - self.x1
+#   def width(self):
+#     return self.x2 - self.x1
 
-  def height(self):
-    return self.y1 - self.y2
+#   def height(self):
+#     return self.y1 - self.y2
 
-r = Rectangle(2, 7, 8, 4)
-print(r.width())
-print(r.height())
+# r = Rectangle(2, 7, 8, 4)
+# print(r.width())
+# print(r.heiht())
+
+### c3: implement area and parimeter member method
+# Implement the area() and perimeter() methods to return the area and perimeter of the rectangle respectively, where
+# area = width * height, perimeter 2 * width + 2 * height
+
+# class Rectangle:
+#   def __init__(self, x1, y1, x2, y2):
+#     if x1 < x2 and y1 > y2:
+#       self.x1 = x1
+#       self.y1 = y1
+#       self.x2 = x2
+#       self.y2 = y2
+#     else:
+#       print("Incorrect coordinates of the rectangle!")
+
+#   def width(self):
+#     return self.x2 - self.x1
+
+#   def height(self):
+#     return self.y1 - self.y2
+
+#   def area(self):
+#     return self.width() * self.height()
+  
+#   def perimeter(self):
+#     return 2 * self.width() + 2 * self.height()
+
+# r = Rectangle(2, 7, 8, 4)
+# print(r.width())
+# print(r.height())
+# print("area: " + str(r.area()))
+# print("Perimeter:" + str(r.perimeter()))
+
