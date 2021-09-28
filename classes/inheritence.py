@@ -53,10 +53,13 @@ class Student(Person):
   def __init__(self, name, rollNumber):
     self.name = name # attr inherited from the Person
     self.rollNumber = rollNumber # students attr
-    Person.__init__(self, name) # Person's constructor
+    super().__init__(name) # calls constructor of super class
 
   def report(self): # student's method
     print("My roll number is ",self.rollNumber)
+
+  def greet(self):
+    super().greet() # calls method of super class
 
 class Teacher(Person):
   def __init__(self, name, course):
